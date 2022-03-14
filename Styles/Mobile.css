@@ -1,0 +1,132 @@
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+
+:root{
+    --Linear_Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
+    --Very_Light_Grayish_Blue: hsl(240, 78%, 98%);
+    --Light_Grayish_Blue: hsl(234, 14%, 74%);
+    --Grayish_Blue: hsl(233, 13%, 49%);
+    --Dark_Grayish_Blue: hsl(232, 13%, 33%);
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: var(--Very_Light_Grayish_Blue);
+    background-image: url(../images/bg-top.svg);
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 15px;
+    margin: 40px;
+}
+h2  {
+    text-align: center;
+    color: var(--Grayish_Blue);
+}
+.alternate {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+.alternate p {
+    color: var(--Light_Grayish_Blue);
+    font-size: 0.7em;
+    margin: 15px;
+}
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    background:linear-gradient(to right,hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+    border-radius: 40px;
+    cursor: pointer;
+}
+.switch::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: var(--Very_Light_Grayish_Blue);
+    left: 5px;
+    top: 5px;
+    transition: all 0.4s;
+}
+input[type='checkbox']:checked + .switch::after{
+    transform: translate(40px);
+    background-color: var(--Very_Light_Grayish_Blue);
+}
+input[type='checkbox']:checked + .switch {
+    background:linear-gradient(to right,hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+}
+.offscreen {
+    position:absolute;
+    left: -999999px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    border-style: 20px solid black ;
+    color: var(--Dark_Grayish_Blue);
+    text-align: center;
+    font-size: 0.8em;
+    line-height: 40px;
+    font-weight: 200;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 0 3px #ccc;
+}
+.card .text p{
+    border-top: 1px solid lightgrey ;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 10px ;
+}
+h1 span{
+    font-size: 0.5em;
+}
+.Button_learn_More {
+    background:linear-gradient(to right,hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+    border-radius: 5px;
+    border-style: none;
+    color: var(--Very_Light_Grayish_Blue);
+    cursor: pointer;
+    font-size: 0.8em;
+    font-weight: 700;
+    height: 30px;
+    margin-top: 25px;
+    width: 100%;
+}
+.card2 {
+    background:linear-gradient(to right,hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+    border-radius: 15px;
+    border-style: 20px solid black ;
+    color: var(--Very_Light_Grayish_Blue);
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 200;
+    line-height: 40px;
+    margin: 10px;
+    padding: 15px;
+}
+.card2 .text p{
+    border-top: 1px solid lightgrey ;
+}
+
+.card2 .Button_learn_More {
+    background:var(--Very_Light_Grayish_Blue);
+    border-radius: 5px;
+    border-style: none;
+    color: hsl(237, 63%, 64%);
+    font-size: 0.8em;
+    font-weight: 700;
+    height: 30px;
+    margin-top: 25px;
+    width: 100%;
+}
